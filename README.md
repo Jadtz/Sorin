@@ -1,7 +1,7 @@
 # Sorin
 
-**Use your Windows PC's keyboard and mouse on your iPad and iPhone, over Bluetooth.**
-Nothing to install on the iPad or iPhone: your PC simply appears to it as a Bluetooth keyboard and mouse.
+**Use your Windows PC's keyboard and mouse on your iPad — and on your iPhone, Android phone or tablet, over Bluetooth.**
+Nothing to install on the other device: your PC simply appears to it as a Bluetooth keyboard and mouse.
 
 **[⬇ Download the latest Sorin.exe](https://github.com/Jadtz/Sorin/releases/latest)**
 
@@ -11,15 +11,33 @@ Nothing to install on the iPad or iPhone: your PC simply appears to it as a Blue
 
 1. Download **Sorin.exe** from the [latest release](https://github.com/Jadtz/Sorin/releases/latest) and run it.
    Sorin installs itself for your Windows user (no admin rights needed) and adds a Start-menu shortcut.
-2. On your iPad or iPhone, open **Settings → Bluetooth** and tap your PC's name.
+2. On your device, open its Bluetooth settings and tap your PC's name:
+   - **iPad / iPhone:** Settings → Bluetooth
+   - **Android:** Settings → Connected devices → Pair new device
 3. Confirm the pairing on both devices.
-4. Press **Ctrl + Alt + I** to control the iPad. Press **Ctrl + Alt + Q**, or **Esc three times**, to come back to the PC.
+4. Press **Ctrl + Alt + I** to control the device. Press **Ctrl + Alt + Q**, or **Esc three times**, to come back to the PC.
 
 With more than one device connected, press **Ctrl + Alt + I** again to move to the next one.
 
 **iPhone:** the keyboard works straight away. To see a mouse pointer, turn on **Settings → Accessibility → Touch → AssistiveTouch**.
 
-**Non-US keyboard?** If the iPad types the wrong characters, set it to the same layout as your PC: **Settings → General → Keyboard → Hardware Keyboard**.
+**Android:** the keyboard and the mouse pointer both work straight away.
+
+**Non-US keyboard?** If the device types the wrong characters, set it to the same layout as your PC:
+- **iPad / iPhone:** Settings → General → Keyboard → Hardware Keyboard
+- **Android:** Settings → System → Keyboard → Physical keyboard
+
+## Works with
+
+| Device | Status |
+|---|---|
+| **iPad** | ✅ Tested, keyboard and mouse |
+| **iPhone** | ✅ Tested; keyboard, plus mouse with AssistiveTouch |
+| **Android phones and tablets** | ✅ Expected to work: the Bluetooth keyboard code Sorin builds on is confirmed on Android |
+| **Mac, ChromeOS, Linux, other Windows PCs** | Should work: anything that accepts a standard Bluetooth keyboard and mouse |
+| **Smart TVs, consoles** | Varies by model |
+
+Tried Sorin with something not listed? [Open an issue](https://github.com/Jadtz/Sorin/issues) and let us know how it went.
 
 ## "Windows protected your PC"
 
@@ -42,11 +60,11 @@ You don't have to take our word for it.
   The result should match the checksum for that release.
 - **Scan it.** Upload `Sorin.exe` to [VirusTotal](https://www.virustotal.com) to check it with dozens of antivirus engines.
 
-Some antivirus programs are cautious about any app that reads the keyboard, because keyloggers do too. Sorin needs to read the keyboard so it can pass your typing to the iPad.
+Some antivirus programs are cautious about any app that reads the keyboard, because keyloggers do too. Sorin needs to read the keyboard so it can pass your typing to your device.
 
 ## Privacy
 
-- Your key presses and mouse movements go **only to the device you paired**, directly over Bluetooth.
+- Your key presses and mouse movements go **only to the device you're controlling**, directly over Bluetooth.
 - Nothing you type is stored or logged, and nothing is sent over the internet.
 - Sorin connects to the internet only to check this page for updates. You can turn that off in **Settings → Updates**.
 
@@ -54,7 +72,7 @@ Some antivirus programs are cautious about any app that reads the keyboard, beca
 
 - **Windows 11** (64-bit).
 - A Bluetooth adapter that supports the **LE peripheral role**. Most recent built-in adapters do. If yours doesn't, Sorin tells you.
-- **iPadOS / iOS 13.4** or later.
+- **iPadOS / iOS 13.4** or later, **Android**, or any device that supports Bluetooth keyboards.
 
 Only one app at a time can act as a Bluetooth keyboard. If another one is running, close it first; Sorin tells you which one it is.
 
